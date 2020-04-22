@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       function fibo(n){
+         //I created an empty array which will contain the sequence.
+  let num=[];
+  num[0]=0;
+  num[1]=1;
+  for(i=2;i<=n;i++){
+    //Formula for fibonacci sequence is fn = fn-1 + fn-2. 
+    num[i]=num[i-1]+num[i-2];
+  }
+  return num;
+}
+console.log(fibo(9));
+
+    </script>
+</body>
+</html>
